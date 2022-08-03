@@ -1,15 +1,14 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import mountains from "../assets/1.png";
-import mountains1 from "../assets/2.png";
 import Link from "next/link";
+import React from "react";
+import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
-
-export default function Home() {
+import profile from "../assets/profile.jpg";
+import Image from "next/image";
+const about = () => {
   const router = useRouter();
   const style = {
-    color: router.asPath === "/" ? "lightblue" : "white",
+    color: router.asPath === "/about" ? "lightblue" : "white",
   };
   return (
     <div className={styles.container}>
@@ -24,25 +23,25 @@ export default function Home() {
           <div className={styles.logo}>Long.</div>
           <div className={styles.menu}>
             <Link href={"/"}>
-              <a style={style}>work</a>
+              <a>work</a>
             </Link>
             <Link href={"/about"}>
-              <a>about</a>
+              <a style={style}>about</a>
             </Link>
           </div>
         </div>
         <div>
-          <div className={styles.wrapper}>
-            <div className={styles.box}>
-              <Link href={"/projects/1"}>
-                <Image src={mountains} layout={"responsive"} />
+          <div className={styles.wrapper1}>
+            <div className={styles.box1}>
+              <h1>hello, i'm Cheulong</h1>I am currently a web developer. I am
+              working on a project focus on communication.
+              <br />
+              <br />
+              <Link href="https://drive.google.com/uc?export=download&id=1a5vkANF5rMYuTb6nfQlKeYXwC7H7OgW4">
+                <a style={{ textDecoration: "underline" }}>resume</a>
               </Link>
             </div>
-            <div className={styles.box}>
-              <Link href={"/projects/2"}>
-                <Image src={mountains1} layout={"responsive"} />
-              </Link>
-            </div>
+            <Image src={profile} layout={"fixed"} width={300} height={400} />
           </div>
         </div>
       </main>
@@ -50,4 +49,6 @@ export default function Home() {
       <footer className={styles.footer}>searcheulong@gmail.com</footer>
     </div>
   );
-}
+};
+
+export default about;
