@@ -13,7 +13,7 @@ import wireframe23 from "../../assets/2wireframe3.png";
 import wireframe24 from "../../assets/2wireframe4.png";
 
 import Image from "next/image";
-const project = () => {
+const Project = () => {
   const router = useRouter();
   const { id } = router.query;
   console.log(id);
@@ -161,4 +161,4 @@ const project = () => {
   );
 };
 
-export default project;
+export default Project;
