@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
 import profile from "../assets/profile.jpg";
 import Image from "next/image";
-const about = () => {
+const About = () => {
   const router = useRouter();
   const style = {
     color: router.asPath === "/about" ? "lightblue" : "white",
@@ -33,15 +33,21 @@ const about = () => {
         <div>
           <div className={styles.wrapper1}>
             <div className={styles.box1}>
-              <h1>hello, i'm Cheulong</h1>I am currently a web developer. I am
-              working on a project focus on communication.
+              <h1>hello, i&apos;m Cheulong</h1>I am currently a web developer. I
+              am working on a project focus on communication.
               <br />
               <br />
               <Link href="https://drive.google.com/uc?export=download&id=1a5vkANF5rMYuTb6nfQlKeYXwC7H7OgW4">
                 <a style={{ textDecoration: "underline" }}>resume</a>
               </Link>
             </div>
-            <Image src={profile} layout={"fixed"} width={300} height={400} />
+            <Image
+              src={profile}
+              layout={"fixed"}
+              width={300}
+              height={400}
+              alt=""
+            />
           </div>
         </div>
       </main>
@@ -51,4 +57,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

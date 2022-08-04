@@ -35,12 +35,12 @@ export default function Home() {
           <div className={styles.wrapper}>
             <div className={styles.box}>
               <Link href={"/projects/1"}>
-                <Image src={mountains} layout={"responsive"} />
+                <Image src={mountains} layout={"responsive"} alt="" />
               </Link>
             </div>
             <div className={styles.box}>
               <Link href={"/projects/2"}>
-                <Image src={mountains1} layout={"responsive"} />
+                <Image src={mountains1} layout={"responsive"} alt="" />
               </Link>
             </div>
           </div>

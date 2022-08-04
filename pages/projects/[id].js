@@ -13,7 +13,7 @@ import wireframe23 from "../../assets/2wireframe3.png";
 import wireframe24 from "../../assets/2wireframe4.png";
 
 import Image from "next/image";
-const project = () => {
+const Project = () => {
   const router = useRouter();
   const { id } = router.query;
   console.log(id);
@@ -73,23 +73,23 @@ const project = () => {
                 </b>
               </p>
               <div style={{ width: "70vw" }}>
-                <Image src={wireframe1} layout={"responsive"} />
+                <Image src={wireframe1} layout={"responsive"} alt="" />
               </div>
 
-              <Image src={wireframe2} layout={"responsive"} />
+              <Image src={wireframe2} layout={"responsive"} alt="" />
               <p>
                 <b>
                   <u>User testing</u>
                 </b>
               </p>
-              <Image src={wireframe4} layout={"responsive"} />
+              <Image src={wireframe4} layout={"responsive"} alt="" />
 
               <p>
                 <b>
                   <u>Mockups</u>
                 </b>
               </p>
-              <Image src={wireframe3} layout={"responsive"} />
+              <Image src={wireframe3} layout={"responsive"} alt="" />
               <p>Next:</p>
               <p>
                 Conduct another round of usability studies to validate whether
@@ -128,7 +128,7 @@ const project = () => {
                 </b>
               </p>
               <div style={{ width: "70vw" }}>
-                <Image src={wireframe22} layout={"responsive"} />
+                <Image src={wireframe22} layout={"responsive"} alt="" />
               </div>
 
               <p>
@@ -136,15 +136,15 @@ const project = () => {
                   <u>User testing</u>
                 </b>
               </p>
-              <Image src={wireframe4} layout={"responsive"} />
+              <Image src={wireframe4} layout={"responsive"} alt="" />
 
               <p>
                 <b>
                   <u>Mockups</u>
                 </b>
               </p>
-              <Image src={wireframe23} layout={"responsive"} />
-              <Image src={wireframe24} layout={"responsive"} />
+              <Image src={wireframe23} layout={"responsive"} alt="" />
+              <Image src={wireframe24} layout={"responsive"} alt="" />
               <p>Next:</p>
               <p>
                 Conduct another round of usability studies to validate whether
@@ -161,4 +161,4 @@ const project = () => {
   );
 };
 
-export default project;
+export default Project;
